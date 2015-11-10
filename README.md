@@ -8,14 +8,5 @@ A website that lets you search for whatever you want, and shows you what the New
 
 How It Works
 -------------
-
-```flow
-st=>start: User Request
-e=>Results
-op=>operation: New York Times and Twitter APIs
-cond=>condition: Result
-
-st->op->cond
-
-
-```
+The user inputs a search term, which is what they would like to know about.
+The website uses the New York Times and Twitter APIs to bring the user the results.
