@@ -28,7 +28,6 @@ def search(hashtag):
 
   with open('tweets.csv', 'wb') as csvfile:
       spamwriter = csv.writer(csvfile)
-      spamwriter.writerow(('Name','Time','Tweet'))
       for tweet in result:
         content = tweet.text.encode('utf-8').strip()
         #username = tweet.from_user
