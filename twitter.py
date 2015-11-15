@@ -17,21 +17,23 @@ hashtag - String that will be searched for.
 Output:
 Returns nothing, but writes search results in tweets.csv.
 """
+
 def search(hashtag):
   auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_token, access_token_secret)
 
   api = tweepy.API(auth)
-  result = api.search(q=hashtag, rpp = 100)
+  
+  result = api.search(q=hashtag, count = 15)
 
   with open('tweets.csv', 'wb') as csvfile:
       spamwriter = csv.writer(csvfile)
-      spamwriter.writerow(('Name','Time','Tweet'))
-      for  tweet in result:
+      for tweet in result:
         content = tweet.text.encode('utf-8').strip()
-        username = tweet.from_user
+	#username = tweet.from_user
         time    = tweet.created_at
-        spamwriter.writerow((username, time, content))
+        spamwriter.writerow((time, content))
+	
 
 #hashtag = raw_input("what hash do you want to search?\n")
 
