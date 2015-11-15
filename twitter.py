@@ -28,14 +28,6 @@ def search(hashtag):
 
   with open('tweets.csv', 'wb') as csvfile:
       spamwriter = csv.writer(csvfile)
-<<<<<<< HEAD
-      for tweet in result:
-        content = tweet.text.encode('utf-8').strip()
-	#username = tweet.from_user
-        time    = tweet.created_at
-        spamwriter.writerow((time, content))
-	
-=======
       spamwriter.writerow(('Name','Time','Tweet'))
       for tweet in result:
         content = tweet.text.encode('utf-8').strip()
@@ -43,7 +35,6 @@ def search(hashtag):
         time    = tweet.created_at
         #spamwriter.writerow((username, time, content))
         spamwriter.writerow((time,content))
->>>>>>> 2d30814ea1ec2dc658254fd585e39707252c5204
 
 #hashtag = raw_input("what hash do you want to search?\n")
 
