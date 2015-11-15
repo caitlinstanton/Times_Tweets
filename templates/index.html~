@@ -125,10 +125,12 @@
 	      <td><h3>New York Times</h3></td>
 	      <td><h3>Twitter</h3></td>
 	    </tr>
+            {% autoescape false %}
 	    <tr>
 	      <td>To Be Added</td>
 	      <td>{{twitter}}</td>
 	    </tr>
+            {% endautoescape %}
 	  </table>
         </div>
       </div>
