@@ -3,12 +3,10 @@ Times Tweets
 
 A website that lets you search for whatever you want, and shows you what the New York Times and Twitter had to say about it.
 
-Created By:
-|   **Member**         |            **Role**                |
-|----------------------|------------------------------------|
-|Caitlin Stanton       | Tweepy (Twitter scraping) API, UX  |
-|Alex Sosnovsky        | New York Times API, Middleware     |
-|Liam Daly             | New York Times API, Middleware     |
+Created By: <br>
+Caitlin Stanton --> Tweepy (Twitter scraping) API, UX  <br>
+Alex Sosnovsky  --> New York Times API, Middleware <br>
+Liam Daly       --> New York Times API, Middleware <br>
 ----------
 
 
