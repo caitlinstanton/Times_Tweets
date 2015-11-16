@@ -9,7 +9,7 @@ def index():
     """
     
     Input:
-    None
+    No user input, but uses articles.csv and tweets.csv
     
     Output:
     Creates the page with the tweets and ny times articles that result from a given search
