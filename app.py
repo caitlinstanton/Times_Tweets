@@ -6,6 +6,15 @@ app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
 def index():
+    """
+    
+    Input:
+    None
+    
+    Output:
+    Creates the page with the tweets and ny times articles that result from a given search
+    
+    """
     if request.method=="POST":
         twitter.search(request.form['searchterm'])
         nyt.search(request.form['searchterm'])
