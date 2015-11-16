@@ -5,17 +5,17 @@ import json,sys
 nyt_api_key = "&api-key=e1d08e31fabebf4e6b531b2ee8b4b922:9:73464677"
 url_init = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q="
 
-"""
-search(topic)
-
-Input:
-topic - String that will be searched for.
-
-Output:
-Returns nothing, but writes search results in articles.csv.
-"""
-
 def search(topic):
+    """
+    search(topic)
+
+    Input:
+    topic - String that will be searched for.
+
+    Output:
+    Returns nothing, but writes search results in articles.csv.
+    
+    """
     contyn = True
     for num in range(len(topic)):
         if(topic[num]==" "):
